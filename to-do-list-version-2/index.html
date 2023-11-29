@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-Br">
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>To do List - Bem Vindo</title>
+	<link href="./assets/css/main.css" rel="stylesheet" type="text/css" />
+	<link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.8/css/line.css">
+
+</head>
+
+<body>
+	<main>
+
+		<section class="create-todo">
+			<h2> Crie uma tarefa</h2>
+
+			<form id="new-todo-form">
+				<h4>O que você deseja adicionar a sua lista de tarefas?</h4>
+
+				<input type="text" name="content" id="content" placeholder="ex. editar um vídeo" />
+
+				<h4>Escolha uma categoria</h4>
+
+				<div class="options">
+
+					<div class="opt-personal">
+						<label class="personal-label">
+							<input type="radio" name="category" id="category1" value="personal" />
+							<div class="label-content personal">
+								<i class="uil uil-user">
+									<p>Personal</p>
+								</i>
+							</div>
+						</label>
+					</div>
+
+					<div class="opt-business">
+						<label class="business-label">
+							<input type="radio" name="category" id="category2" value="business" />
+							<div class="label-content business">
+								<i class="uil uil-bag">
+									<p>Personal</p>
+								</i>
+							</div>
+						</label>
+					</div>
+					
+					<!-- 
+				<label class="business-label">
+						<input type="radio" name="category" id="category2" value="business" />
+							<i class="uil uil-bag"></i>
+						<div>Trabalho</div>
+					</label>	-->
+
+
+				</div>
+
+				<input type="submit" value="adicionar tarefa">
+
+			</form>
+		</section>
+
+		<section class="todo-list">
+			<h2>TAREFAS</h2>
+			<div class="list" id="todo-list"></div>
+		</section>
+
+	</main>
+	<script src="./assets/js/main.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Dai+Banna+SIL&family=Handjet&family=Lisu+Bosa&family=Lora&family=Montserrat&family=Noto+Serif+Vithkuqi&family=Oswald&family=Playfair+Display&family=Poppins&family=Quicksand&family=REM&family=Roboto+Mono&family=Source+Code+Pro&family=Tektur&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    list-style: 0;
+    box-sizing: border-box;
+    border: none;
+}
