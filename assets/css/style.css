@@ -8,24 +8,25 @@
 	box-sizing: border-box;
 	border: none;
 	font-family: 'Montserrat', sans-serif;
+	scroll-behavior: smooth;
 }
 
 body {
 	min-height: 100vh;
-	background-color: #f7e7ff;
-}
+	background-color: #feeafe;
 
-header {
+}
+main{
 	display: flex;
+	flex-direction: column;
 	align-items: center;
 	justify-content: center;
-	flex-direction: column;
-	padding: 2rem;
 }
+
 
 h1 {
 	text-align: center;
-	font-size: 2.9rem;
+	font-size: 3.5rem;
 	margin-top: 2rem
 }
 
@@ -33,34 +34,106 @@ p {
 	font-family: 'Poppins';
 }
 
-header p {
-	margin-top: 0.3rem;
-	font-size: 1.2rem;
+a{
+	text-decoration: none;
+}
+
+.icons i{
+	font-size: 2.5rem;
+}
+
+.icons i:hover{
+	font-size: 3rem;
+	transition: 0.5s ease-in-out;
+}
+
+/*HEADER*/
+header {
+	position: relative;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	height: 100vh;
+	padding: 0 1rem 0 5rem;
+}
+
+header::after {
+	content: '';
+	position: absolute;
+	right: 0;
+	bottom: 0;
+	width: 100%;
+	height: 100px;
+	background: linear-gradient(to top, #b88dda, transparent);
+	z-index: 2;
+}
+
+.header-text{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+
+.header-text h1{
+	margin-top: -2rem;
+	font-size: 5rem;
+}
+.header-text h2{
+	font-size: 4rem;
+	color: #6e30a1;
+}
+
+.header-text p {
+	margin-top: 1rem;
+	font-size: 1.3rem;
 	color: #706d6d;
 }
 
-header p a {
+.header-text p a {
 	font-style: normal;
 	text-decoration: none;
 	color: #2d2c2c;
 	font-weight: bolder;
 }
 
-.about-me-container {
+header img{
+	width: 700px;
+	height: 700px;
+}
+
+/*ABOUT*/
+.about-me {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
 	justify-content: center;
+	position: relative;
+	height: 100vh;
 	background: #b88dda;
 }
 
+.about-me::before {
+	content: '';
+	position: absolute;
+	bottom: 0;
+	right: 0;
+	width: 100%;
+	height: 100px;
+	background: linear-gradient(to top, #feeafe, transparent);
+	z-index: 2;
+}
+.about-me h1{
+	margin-top: -10rem;
 
-.about-content {
+}
+
+.about-container {
 	display: flex;
 	flex-direction: row;
 	align-items: center;
 	justify-content: space-between;
-	padding: 10px 200px 50px 200px;
+	padding: 70px 200px 50px 200px;
 	width: 100%;
 }
 
@@ -68,10 +141,13 @@ header p a {
 	width: 400px;
 	height: 400px;
 	filter: drop-shadow(0px 0px 20px rgba(75, 19, 98, 0.902));
+}
+.about-img img:hover{
+	transition: 4.5s ease-in-out;
 	animation: shadowAnimation 1s cubic-bezier(0.55, 0.025, 0.675, 0.97) infinite alternate;
 }
 
-/*IMAGE ANIMATION*/
+/*ANIMATION*/
 @keyframes shadowAnimation {
 	0% {
 		filter: drop-shadow(0px 0px 20px rgba(75, 19, 98, 0.902)) brightness(0.8);
@@ -84,7 +160,6 @@ header p a {
 	}
 }
 
-
 .about-text {
 	display: flex;
 	flex-direction: column;
@@ -92,6 +167,7 @@ header p a {
 	align-items: center;
 	width: 100%;
 	height: 100%;
+	position: relative;
 }
 
 .about-text-name {
@@ -99,6 +175,10 @@ header p a {
 	font-size: 2.3rem;
 }
 
+.about-text-name strong{
+	color: #6e30a1;
+	cursor: pointer ;
+}
 .about-text-subtitle {
 	margin-top: 0.1rem;
 	font-size: 1.1rem;
@@ -144,23 +224,23 @@ header p a {
 	font-size: 1.3rem;
 }
 
-.social-icons {
+.about-social.icons {
 	width: 25%;
 	display: flex;
 	flex-direction: row;
 	justify-content: space-between;
-	margin-top: 0.5rem;
+	position: absolute;
+	margin-top: 2.2rem;
 }
 
-.about-text-social i {
-	font-size: 2.2rem;
+.about-social.icons i {
 	color: #2c0948;
 }
 
-.about-text-social i:hover {
-	color: #aa41fb;
-	transition: 0.3s ease-in-out;
+.about-social.icons i:hover {
+	color: thistle;
 }
+
 
 /*PROJECTS*/
 
@@ -169,6 +249,7 @@ header p a {
 	flex-direction: column;
 	justify-content: center;
 	margin: 50px 0;
+	height: 100vh;
 }
 
 .project-container {
@@ -177,7 +258,7 @@ header p a {
 	align-items: center;
 	justify-content: space-around;
 	flex-wrap: wrap;
-	gap: 40px;
+	gap: 100px;
 }
 
 .project-item {
@@ -188,7 +269,10 @@ header p a {
 	height: 500px;
 	border-radius: 2rem;
 	box-shadow: -3px -5px 20px 3px #985dc5, 3px 3px 30px 5px #300e4b;
-
+}
+.project-item:hover{
+	background-color: #c9a0e9e7;
+	transition: 0.3s ease-in-out;
 }
 
 .project-image {
@@ -258,12 +342,11 @@ header p a {
 	background: none;
 	color: #2c0948;
 	font-size: 2.9rem;
-
 }
 
 .code-btn i:hover,
 .demo-btn i:hover {
-	color: thistle;
+	color: whitesmoke;
 	transition: .3s ease-in-out;
 }
 
@@ -273,7 +356,6 @@ header p a {
 	align-items: center;
 	justify-content: center;
 	padding: 10px;
-
 }
 
 .project-item.card-vazio h1{
@@ -282,4 +364,31 @@ header p a {
 	margin-top: -1rem;
 	font-size: 3.5rem;
 	transform: rotate(-20deg);
+}
+
+/*FOOTER*/
+footer{
+	background-color: #2c0948;
+	height: 100px;
+	color: whitesmoke;
+	display: flex;
+
+}
+
+.footer-content{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	position: relative;
+	gap: 10px;
+	margin-left: 10px;
+}
+
+
+
+.footer-social.icons{
+	bottom: 0;
+	right: 0;
+	left: 0;
+	position: absolute;
 }
