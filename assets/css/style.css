@@ -419,7 +419,7 @@ footer{
 }
 
 /*RESPONSIVE*/
-@media screen and (min-widht: 1630px) {
+@media screen and (min-width: 1630px) {
 
 	.about-me h1{
 		margin-top: -10rem;
