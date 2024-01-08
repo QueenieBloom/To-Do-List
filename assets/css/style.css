@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Dai+Banna+SIL&family=Handjet&family=Lisu+Bosa&family=Lora&family=Montserrat&family=Noto+Serif+Vithkuqi&family=Oswald&family=Playfair+Display&family=Poppins&family=Quicksand&family=REM&family=Roboto+Mono&family=Source+Code+Pro&family=Tektur&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Salsa&family=Poppins&display=swap');
 
 
 * {
@@ -16,7 +16,8 @@ body {
 	background-color: #feeafe;
 
 }
-main{
+
+main {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
@@ -26,23 +27,24 @@ main{
 
 h1 {
 	text-align: center;
-	font-size: 3.5rem;
-	margin-top: 2rem
+	font-size: 40px;
+	margin-top: 2rem;
+	font-family: 'Salsa';
 }
 
 p {
 	font-family: 'Poppins';
 }
 
-a{
+a {
 	text-decoration: none;
 }
 
-.icons i{
+.icons i {
 	font-size: 2.5rem;
 }
 
-.icons i:hover{
+.icons i:hover {
 	font-size: 3rem;
 	transition: 0.5s ease-in-out;
 }
@@ -68,25 +70,26 @@ header::after {
 	z-index: 2;
 }
 
-.header-text{
+.header-text {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
 	justify-content: center;
 }
 
-.header-text h1{
+.header-text h1 {
 	margin-top: -2rem;
-	font-size: 4rem;
+	font-family: 'Montserrat';
 }
-.header-text h2{
-	font-size: 3.6rem;
+
+.header-text h2 {
+	font-size: 40px;
 	color: #6e30a1;
 }
 
 .header-text p {
 	margin-top: 1rem;
-	font-size: 1.3rem;
+	font-size: 20px;
 	color: #706d6d;
 }
 
@@ -97,7 +100,7 @@ header::after {
 	font-weight: bolder;
 }
 
-header img{
+header img {
 	width: 700px;
 	height: 700px;
 }
@@ -130,7 +133,8 @@ header img{
 	height: 400px;
 	filter: drop-shadow(0px 0px 20px rgba(75, 19, 98, 0.902));
 }
-.about-img img:hover{
+
+.about-img img:hover {
 	transition: 4.5s ease-in-out;
 	animation: shadowAnimation 1s cubic-bezier(0.55, 0.025, 0.675, 0.97) infinite alternate;
 }
@@ -150,10 +154,11 @@ header img{
 	font-size: 2.3rem;
 }
 
-.about-text-name strong{
+.about-text-name strong {
 	color: #6e30a1;
-	cursor: pointer ;
+	cursor: pointer;
 }
+
 .about-text-subtitle {
 	margin-top: 0.1rem;
 	font-size: 1.1rem;
@@ -232,7 +237,7 @@ header img{
 .projects::before {
 	content: '';
 	position: absolute;
-	top:0;
+	top: 0;
 	bottom: 0;
 	left: 0;
 	right: 0;
@@ -241,7 +246,8 @@ header img{
 	background: linear-gradient(to bottom, #b88dda, transparent);
 	z-index: 2;
 }
-.projects h1{
+
+.projects h1 {
 	margin-top: 250px;
 }
 
@@ -264,7 +270,8 @@ header img{
 	border-radius: 2rem;
 	box-shadow: -3px -5px 20px 3px #985dc5, 3px 3px 30px 5px #300e4b;
 }
-.project-item:hover{
+
+.project-item:hover {
 	background-color: #c9a0e9e7;
 	transition: 0.3s ease-in-out;
 }
@@ -283,12 +290,13 @@ header img{
 	height: 200px;
 }
 
-.project-text{
+.project-text {
 	height: 40%;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
 }
+
 .project-item h3 {
 	margin-top: 0.5rem;
 	text-align: center;
@@ -314,7 +322,7 @@ header img{
 	position: absolute;
 	padding: 0 30px;
 	bottom: 5%;
-	left:0;
+	left: 0;
 	right: 0;
 }
 
@@ -344,7 +352,7 @@ header img{
 	transition: .3s ease-in-out;
 }
 
-.project-item.card-vazio{
+.project-item.card-vazio {
 	filter: brightness(0.7);
 	display: flex;
 	align-items: center;
@@ -352,7 +360,7 @@ header img{
 	padding: 10px;
 }
 
-.project-item.card-vazio h1{
+.project-item.card-vazio h1 {
 	font-family: 'Poppins';
 	color: #300e4b;
 	margin-top: -1rem;
@@ -361,7 +369,7 @@ header img{
 }
 
 /*FOOTER*/
-footer{
+footer {
 	background-color: #b88dda;
 	height: 150px;
 	color: whitesmoke;
@@ -369,7 +377,7 @@ footer{
 
 }
 
-.footer-content{
+.footer-content {
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
@@ -379,14 +387,14 @@ footer{
 	position: relative;
 }
 
-.footer-content p{
+.footer-content p {
 	position: absolute;
 	bottom: 0;
 	margin-bottom: 20px;
 	margin-top: -1rem;
 }
 
-.footer-social .icons{
+.footer-social .icons {
 	position: absolute;
 	top: 0;
 	bottom: 0;
@@ -394,6 +402,7 @@ footer{
 	right: 0;
 	margin-top: 1.3rem;
 }
+
 .footer-social .icons i {
 	color: #2c0948;
 }
@@ -401,7 +410,8 @@ footer{
 .footer-social .icons i:hover {
 	color: thistle;
 }
-.footer-social h3{
+
+.footer-social h3 {
 	margin-top: 1.7rem;
 }
 
@@ -420,15 +430,30 @@ footer{
 
 /*RESPONSIVE*/
 @media screen and (min-width: 1630px) {
+	h1 {
+		font-size: 70px;
+	}
 
-	.about-me h1{
-		margin-top: -10rem;
-	}
-	.about-container{
-		padding: 70px 200px 50px 200px;
-	}
-	.header-text h1{
-		margin-top: -2rem;
+	.header-text h1 {
+		margin-top: -1.5rem;
 		font-size: 5rem;
+	}
+
+	.about-me {
+		height: 87vh;
+	}
+
+	.about-me h1 {
+		margin-top: 7rem;
+	}
+
+	.about-container {
+		margin-top: -100px;
+		padding: 70px 200px 50px 200px;
+
+	}
+
+	.projects h1{
+		margin-bottom: 50px;
 	}
 }
