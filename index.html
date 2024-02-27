@@ -4,77 +4,100 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>TO-DO Versions</title>
+    <title>Projetos To-Do</title>
     <link rel="stylesheet" href="./assets/css/style.css">
     <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.8/css/line.css">
 </head>
 
 <body>
     <header>
-        <div class="header-text">
-            <h1>Bem-Vindo a Página</h1>
-            <h2>To-Do Versions</h2>
-            <p>Esta página mostra todos os <a href="#projects">projetos</a> de to-do list feitas por <a href="#about-me">mim</a></p>
+        <a href="" class="logo">
+            <h1>Projetos To-do</h1>
+        </a>
+        <nav>
+            <ul class="navLinks" id="navLinks">
+                <li class=><a href="#about" data-status="active">Sobre</a></li>
+                <li><a href="#projects" data-status="inactive">Projetos</a></li>
+                <li><a href="#portifolio" data-status="inactive">Portifólio</a></li>
+            </ul>
+        </nav>
+
+        <div class="social">
+            <a title="Instagram" target="_blank" href="https://www.instagram.com/http.lari_dias/">
+                <i class="uil uil-instagram-alt"></i>
+            </a>
+            <a title="LinkedIn" target="_blank" href="https://www.linkedin.com/in/larissa-moraes-dias-0740ba219/">
+                <i class="uil uil-linkedin"></i>
+            </a>
+            <a title="GitHub" target="_blank" href="https://github.com/QueenieBloom">
+                <i class="uil uil-github"></i>
+            </a>
+            <a title="WhatsApp" target="_blank" href="https://wa.me/5591980737702">
+                <i class="uil uil-whatsapp-alt"></i>
+            </a>
         </div>
 
-        <div class="header-image"><img title="Image by storyset on Freepik" src="./assets/src/todo-image2.png" alt="Woman with a clipboard To-Do"></div>
     </header>
     <main>
-        <section class="about-me" id="about-me">
-            <h1>Sobre Mim</h1>
-            <div class="about-container">
-                <div class="about-img">
-                    <img src="./assets/src/blob-img4.png" alt="foto de perfil">
+
+
+        <!-- <div class="header-image"><img title="Image by storyset on Freepik" src="./assets/src/todo-image2.png" alt="Woman with a clipboard To-Do"></div> -->
+
+        <section id="about">
+            <div class="aboutContainer">
+                <div class="aboutText">
+                    <h4><span>Olá, meu nome é Larissa Dias!</span></h4>
+                    <h1>Desenvolvedora Web Front-End</h1>
+                    <p>
+                        Atualmente sou graduanda do 6º período do curso de Sistemas de Informação na <abbr><a
+                                title="Universidade Federal Rural da Amazônia" target="_blank"
+                                href="https://novo.ufra.edu.br/">UFRA</a></abbr> e desenvolvo pequenos projetos para
+                        aprimorar meus conhecimentos e ganhar experiência para projetos reais. Esta pagina tem o
+                        objetivo de mostrar os projetos estilos <strong>to-do list</strong> que eu fiz em meu tempo
+                        livre.
+                        <strong><br><br>Espero que goste!</strong>
+                    </p>
+                    <div></div>
                 </div>
-                <div class="about-text">
-                    <h3 class="about-text-name">
-                        Olá, meu nome é <strong  title="Passe o mouse na foto ao lado!">Larissa Dias</strong>.
-                    </h3>
-                    <p class="about-text-subtitle ">Aspirante a Desenvolvedora Web Front-End</p>
-                    <div class="about-text-description">
-                        <div class="description-text">
-                            <p>Tenho atualmente 19 anos e estou indo para 6º período do Curso de de Informação, o qual estou cursando na <abbr><a title="Universidade Federal Rural da Amazônia" target="_blank" href="https://novo.ufra.edu.br/">UFRA</a></abbr> e pretendo seguir a carreira de Desenvolvedora Web Full-Stack, porém no momento estou focando em aprimorar meus conhecimentos em desenvolvimento web Front-End.</p>
-                        </div>
-                    </div>
-                    <div class="about-text-social">
-                        <h4>Social Medias</h4>
-                        <div class="about-social icons">
-                            <a title="Instagram" target="_blank" href="https://www.instagram.com/http.lari_dias/">
-                                <i class="uil uil-instagram-alt"></i>
-                            </a>
-                            <a title="LinkedIn" target="_blank" href="https://www.linkedin.com/in/larissa-moraes-dias-0740ba219/">
-                                <i class="uil uil-linkedin"></i>
-                            </a>
-                            <a title="GitHub" target="_blank" href="https://github.com/QueenieBloom">
-                                <i class="uil uil-github"></i>
-                            </a>
-                            <a title="WhatsApp" target="_blank" href="https://wa.me/5591980737702">
-                                <i class="uil uil-whatsapp-alt"></i>
-                            </a>
-                        </div>
-                    </div>
+                <div class="aboutImage">
+                    <img src="assets/src/heroImage.png" alt="about img" />
+                </div>
             </div>
         </section>
-        <section id="projects" class="projects">
-            <h1>Projetos</h1>
+
+        <section id="projects">
+            <div class="secTittle">
+                <h1>Projetos</h1>
+                <span id="line"></span>
+                <p>Meus projetos to-do</p>
+            </div>
             <div class="project-container">
                 <article class="project-item">
                     <div class="project-image">
                         <img src="./assets/src/todo-1-image.png" alt="">
                     </div>
                     <div class="project-text">
-                        <h3 class="project-text-title">Todo-list Versão 1</h3>
-                        <p class="project-text-descripition">
-                            Lista simples de tarefas com HTML, CSS e JavaScript, utiliza o localStorage. Tem um limite de 15 tarefas e a opção de remoção.
+                        <h3 class="title">Todo-list Versão 1</h3>
+                        <p class="description">
+                            O projeto consiste em uma aplicação web de lista de tarefas (To-do list), desenvolvida em
+                            HTML, CSS e JavaScript. A página web possui um formulário para adicionar novas tarefas,
+                            exibindo uma mensagem de alerta caso o limite de 15 tarefas seja atingido. Cada tarefa é
+                            representada por uma caixa de seleção, uma descrição e um botão de exclusão. As tarefas são
+                            armazenadas localmente no navegador utilizando o localStorage, permitindo que persistam
+                            mesmo após o recarregamento da página. Além disso, há uma funcionalidade que impede a adição
+                            de novas tarefas quando o limite é alcançado e remove a tarefa tanto visualmente quanto do
+                            armazenamento local quando o botão de exclusão é acionado.
                         </p>
-                    </div>
-                    <div class="project-button">
-                        <a title="Botão para ir ao Código" target="_blank" class="code-btn" href="https://github.com/QueenieBloom/To-Do-List/tree/main/to-do-list-version-1">
-                            <i class="uil uil-window"></i>
-                        </a>
-                        <a title="Botão para ir a versão Demo" target="_blank" class="demo-btn" href="./to-do-list-version-1/index.html">
-                            <i class="uil uil-browser"></i>
-                        </a>
+                        <div class="project-button">
+                            <a title="Botão para ir ao Código" target="_blank" class="code-btn"
+                                href="https://github.com/QueenieBloom/To-Do-List/tree/main/to-do-list-version-1">
+                                <i class="uil uil-github-alt"></i> 
+                            </a>
+                            <a title="Botão para ir a versão Demo" target="_blank" class="demo-btn"
+                                href="./to-do-list-version-1/index.html">
+                                <i class="uil uil-link"></i>
+                            </a>
+                        </div>
                     </div>
                 </article>
                 <article class="project-item">
@@ -82,51 +105,51 @@
                         <img src="./assets/src/todo-2-image.png" alt="">
                     </div>
                     <div class="project-text">
-                        <h3 class="project-text-title">Todo-list Versão 2</h3>
-                        <p class="project-text-descripition">
-                            Lista de tarefas mais avançada que utiliza a manipulação dinâmica do DOM e é implementada para exibir, editar e excluir tarefas e inclui categorização por tipo de tarefa e marcação de conclusão.
+                        <h3 class="title">Todo-list Versão 2</h3>
+                        <p class="description">
+                            O projeto é uma aplicação web de lista de tarefas desenvolvida em <strong>HTML, CSS e JavaScript</strong>. A página apresenta duas seções principais: uma para criar novas tarefas e outra para exibir a lista de tarefas existentes. O formulário de criação de tarefas permite aos usuários adicionar uma descrição e escolher uma categoria entre "Personal" e "Business". As tarefas são exibidas em um layout organizado, onde cada tarefa possui uma caixa de seleção para marcar como concluída, uma bolha colorida indicando a categoria, a descrição da tarefa e botões para editar e excluir a tarefa. As informações das tarefas são armazenadas localmente no navegador usando o localStorage, garantindo a persistência dos dados mesmo após o recarregamento da página. A aplicação permite também editar o conteúdo das tarefas e excluí-las, mantendo a interface sempre atualizada conforme as interações do usuário.
                         </p>
+                        <div class="project-button">
+                            <a title="Botão para ir ao Código" target="_blank" class="code-btn"
+                                href="https://github.com/QueenieBloom/To-Do-List/tree/main/to-do-list-version-2">
+                                <i class="uil uil-github-alt"></i>
+                            </a>
+                            <a title="Botão para ir a versão Demo" target="_blank" class="demo-btn"
+                                href="./to-do-list-version-2/index.html">
+                                <i class="uil uil-link"></i>
+                            </a>
+                        </div>
+                    </div>
 
-                    </div>
-                    <div class="project-button">
-                        <a title="Botão para ir ao Código" target="_blank" class="code-btn" href="https://github.com/QueenieBloom/To-Do-List/tree/main/to-do-list-version-2">
-                            <i class="uil uil-window"></i>
-                        </a>
-                        <a title="Botão para ir a versão Demo" target="_blank" class="demo-btn" href="./to-do-list-version-2/index.html">
-                            <i class="uil uil-browser"></i>
-                        </a>
-                    </div>
-                </article>
-                <article class="project-item  card-vazio">
-                    <h1>Versão 3 <strong>EM BREVE</strong></h1>                    
                 </article>
             </div>
 
         </section>
     </main>
-<footer>
-    <div class="footer-content">
-        <div class="footer-social ">
-            <div class="icons">
-                <a title="Instagram" target="_blank" href="https://www.instagram.com/http.lari_dias/">
-                    <i class="uil uil-instagram-alt"></i>
-                </a>
-                <a title="LinkedIn" target="_blank" href="https://www.linkedin.com/in/larissa-moraes-dias-0740ba219/">
-                    <i class="uil uil-linkedin"></i>
-                </a>
-                <a title="GitHub" target="_blank" href="https://github.com/QueenieBloom">
-                    <i class="uil uil-github"></i>
-                </a>
-                <a title="WhatsApp" target="_blank" href="https://wa.me/5591980737702">
-                    <i class="uil uil-whatsapp-alt"></i>
-                </a>
+    <footer>
+        <div class="footer-content">
+            <div class="footer-social ">
+                <div class="icons">
+                    <a title="Instagram" target="_blank" href="https://www.instagram.com/http.lari_dias/">
+                        <i class="uil uil-instagram-alt"></i>
+                    </a>
+                    <a title="LinkedIn" target="_blank"
+                        href="https://www.linkedin.com/in/larissa-moraes-dias-0740ba219/">
+                        <i class="uil uil-linkedin"></i>
+                    </a>
+                    <a title="GitHub" target="_blank" href="https://github.com/QueenieBloom">
+                        <i class="uil uil-github"></i>
+                    </a>
+                    <a title="WhatsApp" target="_blank" href="https://wa.me/5591980737702">
+                        <i class="uil uil-whatsapp-alt"></i>
+                    </a>
+                </div>
+
+                <h3>Conecte-se</h3>
             </div>
-            
-            <h3>Conecte-se</h3>
+            <p>&copy; 2023 Projetos To-Do | Desenvolvido por Larissa Dias</p>
         </div>
-        <p>&copy; 2023 To-Do Versions | Desenvolvido por Larissa Dias</p>
-    </div>
-</footer>
+    </footer>
 
 </body>
 
